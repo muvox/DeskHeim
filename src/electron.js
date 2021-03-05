@@ -24,6 +24,9 @@ function createWindow() {
     })
 }
 
+app.commandLine.appendSwitch('disable-features', 'OutOfBlinkCors')
+
+
 app.on("ready", createWindow)
 
 // those two events completely optional to subscrbe to, but that's a common way to get the

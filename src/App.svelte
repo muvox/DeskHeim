@@ -1,12 +1,8 @@
 <script>
-	import { fade } from 'svelte/transition';
-	import {onMount, onDestroy} from 'svelte'
-	import { dataset_dev } from 'svelte/internal'
 	import Panel1 from './Panel1.svelte'
 	import Panel2 from './Panel2.svelte'
 	import Panel3 from './Panel3.svelte'
 	import Panel4 from './Panel4.svelte'
-
 	const fetchData = (async () => {
 		const response = await fetch('http://192.168.1.151:3000/')
 		console.log('reponse', response)
